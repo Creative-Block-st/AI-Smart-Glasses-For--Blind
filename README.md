@@ -84,3 +84,23 @@ After the brief discription you will be able to identify, which components we ar
 - TP4056 Module
 - MT3608 Boost Converter
 
+## Wiring of the hardware components
+**Power supply wiring**
+1. Battery → TP4056:
+   - B+ to battery red wire (positive)
+   - B- to battery black wire (negative)
+   
+2. TP4056 → MT3608:
+   - OUT+ to MT3608 IN+
+   - OUT- to MT3608 IN-
+
+3. MT3608 Output → Pi:
+   - Adjust MT3608 output to 5V using a multimeter and potentiometer screw.
+   - Connect OUT+ and OUT- of MT3608 to Pi's 5V and GND pins.
+![Screenshot 2025-05-10 194757](https://github.com/user-attachments/assets/27bf2a02-a73c-4ad2-b77d-0cd5d63927a9)
+
+
+
+   
+
+
