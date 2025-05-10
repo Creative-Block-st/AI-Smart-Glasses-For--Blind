@@ -2,7 +2,7 @@ import cv2
 import pytesseract
 import torch
 import pyttsx3
-import RPi.GPIO as GPIO    #type:ignore 
+import RPi.GPIO as GPIO     
 import time
 from datetime import datetime
 
