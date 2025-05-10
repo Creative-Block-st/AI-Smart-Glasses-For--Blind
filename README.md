@@ -1,8 +1,9 @@
 #  AI-Powered Smart Glasses for the Blind
 
 An assistive wearable device that helps visually impaired individuals detect objects and read printed text through voice feedback using a slide switch and button.
+## Brief Discription Of What We Will Be Doing
 
-##  Features
+###  Features
 
 - **Dual-Mode Functionality via Slide Switch**:
   -  *Object Detection Mode*: Announces objects seen by the camera.
@@ -14,7 +15,7 @@ An assistive wearable device that helps visually impaired individuals detect obj
 - **Offline Operation**: No internet required.
 - **Lightweight and portable** for eyewear integration.
 
-##  Hardware Components
+###  Hardware Components
 
 | Component                     | Function                        |
 |------------------------------|----------------------------------|
@@ -27,9 +28,8 @@ An assistive wearable device that helps visually impaired individuals detect obj
 | 3.7V LiPo Battery (1200mAh)  | Power source                    |
 | TP4056 Module                | Battery charging                |
 | MT3608 Boost Converter       | Boost 3.7V → 5V for Pi          |
-| Resistors (10kΩ optional)    | Debouncing GPIO inputs          |
 
-##  Hardware Wiring
+###  Hardware Wiring
 
 | Pin / Component     | GPIO Pin       | Notes                                  |
 |---------------------|----------------|----------------------------------------|
@@ -41,7 +41,7 @@ An assistive wearable device that helps visually impaired individuals detect obj
 | TP4056 → MT3608     | Power In       | Boost voltage to 5V                    |
 | MT3608 → Pi         | 5V & GND       | Pi power input                         |
 
-##  Software Structure
+###  Software Structure
 
 ```
 ai-glasses/
@@ -52,7 +52,7 @@ ai-glasses/
 ├── README.md                # Project documentation
 ```
 
-##  Main Software Libraries
+###  Main Software Libraries
 
 - `OpenCV` – Camera interfacing and image processing
 - `pyttsx3` – Offline text-to-speech
@@ -60,7 +60,7 @@ ai-glasses/
 - `torch` + YOLOv5 – Object detection model
 - `RPi.GPIO` – Handling GPIO input from switch and button
 
-##  Setup Instructions (Short)
+###  Setup Instructions (Short)
 
 1. **Flash Raspberry Pi OS (Lite recommended)** on SD card.
 2. Enable:
@@ -70,3 +70,17 @@ ai-glasses/
 4. Install Python libraries from `requirements.txt`.
 5. Configure `glasses.py` to **auto-start** using `rc.local` or systemd.
 6. Connect hardware as per the wiring guide.
+
+# Hardware 
+After the brief discription you will be able to identify, which components we are going to use.
+
+- Raspberry Pi Zero 2 W
+- Pi Camera Module V2 (CSI)
+- USB Sound Card
+- Wired Earbuds (3.5mm)
+- Push Button
+- Slide Switch (2-way/DPDT)
+- 3.7V LiPo Battery (1200mAh)
+- TP4056 Module
+- MT3608 Boost Converter
+
