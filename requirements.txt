@@ -1,0 +1,8 @@
+opencv-python
+pyttsx3
+pytesseract
+torch
+requests
+pandas
+RPi.GPIO
+Pillow
