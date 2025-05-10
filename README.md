@@ -85,7 +85,7 @@ After the brief discription you will be able to identify, which components we ar
 - MT3608 Boost Converter
 
 ## Wiring of the hardware components
-**Power supply wiring**
+### **Power supply wiring**
 1. Battery → TP4056:
    - B+ to battery red wire (positive)
    - B- to battery black wire (negative)
@@ -98,6 +98,22 @@ After the brief discription you will be able to identify, which components we ar
    - Adjust MT3608 output to 5V using a multimeter and potentiometer screw.
    - Connect OUT+ and OUT- of MT3608 to Pi's 5V and GND pins.
 ![Screenshot 2025-05-10 194757](https://github.com/user-attachments/assets/27bf2a02-a73c-4ad2-b77d-0cd5d63927a9)
+### **Controll switch wiring**
+| Slide Position | GPIO Pin Pulled HIGH | Mode             |
+| -------------- | -------------------- | ---------------- |
+| Left           | GPIO17               | Object Detection |
+| Right          | GPIO27               | Text Reading     |
+
+**Slide Switch Wiring:**
+- Middle terminal → GND
+- One terminal → GPIO17 (object detection)
+- Other terminal → GPIO27 (text recognition)
+
+**Push Button Wiring:**
+- One pin → GPIO22
+- Other pin → GND
+
+
 
 
 
