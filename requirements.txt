@@ -1,3 +1,4 @@
+# Python libraries required
 opencv-python
 pyttsx3
 pytesseract
