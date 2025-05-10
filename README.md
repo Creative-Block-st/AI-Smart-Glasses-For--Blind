@@ -113,6 +113,14 @@ After the brief discription you will be able to identify, which components we ar
 - One pin → GPIO22
 - Other pin → GND
 
+# Software
+Before moving forward, you should download the Python script [here,](https://github.com/Creative-Block-st/AI-Smart-Glasses-For--Blind/blob/main/glasses.py) and
+also install all the required libraries mentioned in [requirements.txt](https://github.com/Creative-Block-st/AI-Smart-Glasses-For--Blind/blob/main/requirements.txt) \
+So lets start! For detecting objects, the AI model that I used is [YOLOv5,](https://github.com/ultralytics/yolov5/releases) which is an amazing image detecting AI
+model. It could detect upto 80 different objects
+
+
+
 
 
 
