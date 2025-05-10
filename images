@@ -1,0 +1,6 @@
+# Include this in your Code
+filename = f"images/capture_{timestamp}.jpg"
+cv2.imwrite(filename, frame)
+#The folder 'images/' exists before running, or create it dynamically with
+if not os.path.exists("images"):
+    os.makedirs("images")
