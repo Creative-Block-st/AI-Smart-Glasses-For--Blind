@@ -111,7 +111,10 @@ After the brief discription you will be able to identify, which components we ar
 
 **Push Button Wiring:**
 - One pin → GPIO22
-- Other pin → GND
+- Other pin → GND \
+This is the complete wiring diagram
+![Screenshot 2025-05-11 210253](https://github.com/user-attachments/assets/6e6f209c-b2bc-4e34-9a00-6951bae63d56)
+
 
 # Software
 Before moving forward, you should download the Python script [here,](https://github.com/Creative-Block-st/AI-Smart-Glasses-For--Blind/blob/main/glasses.py) and
